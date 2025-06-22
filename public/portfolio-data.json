@@ -1,91 +1,211 @@
 {
   "theme": {
     "backgroundColor": "0 0% 20%",
-    "primaryColor": "300 100% 25%",
+    "primaryColor": "210 100% 50%",
     "accentColor": "180 100% 50%"
   },
   "personal": {
-    "name": "Alex Doe",
-    "title": "Flutter & Mobile App Developer",
-    "email": "alex.doe@example.com",
+    "name": "Mohammed Ammourie",
+    "title": "Software Developer & Flutter Specialist",
+    "email": "mohammed.ammourie@gmail.com",
+    "phone": "+963933564291",
     "social": {
-      "github": "https://github.com/example",
-      "linkedin": "https://linkedin.com/in/example",
-      "twitter": "https://twitter.com/example"
+      "linkedin": "https://linkedin.com/in/mohammed-al-ammourie",
+      "github": "https://github.com/Ammourie",
+      "twitter": "https://x.com/Ammourie99",
+      "telegram": "https://t.me/ammourie99"
     },
-    "avatar": "https://placehold.co/200x200.png"
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
   },
-  "about": "I am a passionate Flutter developer with a knack for creating beautiful, high-performance mobile applications for both Android and iOS. With several years of experience in mobile development, I enjoy turning complex problems into simple, elegant solutions. When I'm not coding, you can find me exploring new technologies or contributing to open-source projects.",
+  "about": "A passionate software developer with a strong focus on delivering high-quality applications. Experienced in building innovative solutions that enhance user experience and business efficiency. Adept at working in dynamic environments, collaborating with teams, and continuously learning to improve and adapt to new challenges. Specialized in Flutter development and eCommerce applications with expertise in mobile and web platforms.",
   "skills": [
-    { "name": "Flutter", "level": 95 },
-    { "name": "Dart", "level": 90 },
-    { "name": "Firebase", "level": 85 },
-    { "name": "React Native", "level": 70 },
-    { "name": "State Management (Bloc, Provider)", "level": 90 },
-    { "name": "UI/UX Design Principles", "level": 80 }
+    {
+      "name": "Flutter",
+      "level": 95
+    },
+    {
+      "name": "Firebase",
+      "level": 90
+    },
+    {
+      "name": "Next.js",
+      "level": 85
+    },
+    {
+      "name": "RESTful APIs",
+      "level": 90
+    },
+    {
+      "name": "Google Maps Integration",
+      "level": 85
+    },
+    {
+      "name": "Payment Integration",
+      "level": 80
+    },
+    {
+      "name": "Live Tracking",
+      "level": 85
+    },
+    {
+      "name": "Git",
+      "level": 90
+    },
+    {
+      "name": "Linux",
+      "level": 75
+    }
   ],
   "projects": [
     {
-      "slug": "awesome-chat-app",
-      "title": "Awesome Chat App",
-      "description_short": "A real-time chat application built with Flutter and Firebase.",
-      "description_long": "This is a full-featured chat application that includes real-time messaging, user authentication, push notifications, and media sharing. The backend is powered by Firebase's Firestore and Authentication services, ensuring scalability and reliability.",
-      "tags": ["Flutter", "Firebase", "Dart", "Real-time"],
-      "main_image": "https://placehold.co/600x400.png",
-      "gallery_images": [
-        "https://placehold.co/600x400.png",
-        "https://placehold.co/600x400.png"
+      "slug": "ataa-electrician",
+      "title": "Ataa-Electrician eCommerce App",
+      "description_short": "A Flutter-based eCommerce application for electricians to browse and purchase products from vendors.",
+      "description_long": "The Ataa eCommerce Electrician App is a Flutter-based application inspired by the modular eCommerce project. It allows electricians to browse and purchase products from vendors, view products, add items to their cart, complete the checkout process, and earn points from vendors. This app is part of a two-app system, with the other app designed for vendors to manage their products and services.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Vendor Management",
+        "Mobile App"
       ],
-      "source_code_url": "https://github.com/example/chat-app",
-      "live_url": "#"
+      "main_image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=400&fit=crop",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop"
+      ],
+      "date": "Nov 2024 - Dec 2024",
+      "company": "Osous Technology LLC"
     },
     {
-      "slug": "e-commerce-store",
-      "title": "E-Commerce Store",
-      "description_short": "A mobile storefront for a modern e-commerce platform.",
-      "description_long": "A complete mobile e-commerce solution with product browsing, a shopping cart, secure checkout with Stripe integration, and order history. The app is designed with a clean, user-friendly interface to provide an excellent shopping experience.",
-      "tags": ["Flutter", "Stripe", "E-commerce", "UI/UX"],
-      "main_image": "https://placehold.co/600x400.png",
-      "gallery_images": [
-        "https://placehold.co/600x400.png",
-        "https://placehold.co/600x400.png"
+      "slug": "maria-taxi",
+      "title": "Maria Taxi - Ride Hailing Platform",
+      "description_short": "A comprehensive taxi and transportation service with customer and driver applications.",
+      "description_long": "The Maria Taxi project comprises two Flutter applications: one for customers and the other for drivers. The customer application enables users to request a taxi, view available bus trips, book seats, and access tourism bus services. The driver application allows drivers to accept taxi ride requests, manage bus trips, and update trip details. Additionally, the project includes a school bus service, which is currently under development.",
+      "tags": [
+        "Flutter",
+        "Live Tracking",
+        "Google Maps",
+        "Transportation"
       ],
-      "live_url": "#"
+      "main_image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1558618047-3c8c76ca7890?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=400&fit=crop"
+      ],
+      "date": "Aug 2024 - Oct 2024",
+      "company": "Osous Technology LLC"
     },
     {
-      "slug": "fitness-tracker",
-      "title": "Fitness Tracker",
-      "description_short": "An app to track workouts and monitor fitness goals.",
-      "description_long": "This app helps users track their fitness journey. Features include workout logging, progress charts, setting personal goals, and social sharing. It integrates with device sensors to track steps and distance.",
-      "tags": ["Flutter", "Health", "Sensors", "Data Viz"],
-      "main_image": "https://placehold.co/600x400.png",
-      "gallery_images": [
-        "https://placehold.co/600x400.png",
-        "https://placehold.co/600x400.png"
+      "slug": "epihope",
+      "title": "EpiHope - Medical Management Platform",
+      "description_short": "An application designed to assist epilepsy patients and doctors in managing health information and medications.",
+      "description_long": "EpiHope is an application designed to assist epilepsy patients and doctors in managing health information and medications. It includes two main sections: the Doctor's Portal for accessing research articles, and the Patient's Portal for tracking health episodes and managing medications. The project also features an Admin Dashboard built with Next.js for content management.",
+      "tags": [
+        "Flutter",
+        "Next.js",
+        "Healthcare",
+        "Admin Dashboard"
       ],
-      "source_code_url": "https://github.com/example/fitness-app"
+      "main_image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop"
+      ],
+      "date": "Jun 2024 - Jul 2024",
+      "company": "Osous Technology LLC"
+    },
+    {
+      "slug": "fashion-modular-ecommerce",
+      "title": "Fashion - Modular eCommerce Platform",
+      "description_short": "A modular eCommerce platform designed to simplify and streamline the development of eCommerce applications.",
+      "description_long": "Fashion is a modular eCommerce platform designed to simplify and streamline the development of eCommerce applications. It consists of a wide range of customizable plugins that can be easily turned on or off, allowing developers to create diverse variations of eCommerce apps tailored to specific business needs. The platform provides flexibility and scalability for various business requirements.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Modular Architecture",
+        "Plugins"
+      ],
+      "main_image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop"
+      ],
+      "date": "Feb 2024 - Jun 2024",
+      "company": "Osous Technology LLC"
+    },
+    {
+      "slug": "invoice-management-app",
+      "title": "Invoice Management System",
+      "description_short": "A comprehensive system for managing invoices, billing, and payments with admin panel.",
+      "description_long": "Created a comprehensive Invoice Management App & Admin Panel system for managing invoices, billing, and payments. The application provides features for creating, tracking, and managing invoices, with secure payment processing and detailed reporting capabilities. Built with Flutter for cross-platform compatibility and seamless performance.",
+      "tags": [
+        "Flutter",
+        "Invoice Management",
+        "Admin Panel",
+        "Payment Processing"
+      ],
+      "main_image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+      ],
+      "date": "Oct 2022 - Nov 2023",
+      "company": "DropIdea Team"
+    },
+    {
+      "slug": "home-working-app",
+      "title": "Home-Working Platform",
+      "description_short": "A platform for connecting freelancers with job opportunities with comprehensive admin panel.",
+      "description_long": "Developed a Home-Working App & Admin Panel platform for connecting freelancers with job opportunities. The application provides features for job posting, freelancer profiles, project management, and secure communication between clients and freelancers. Built with Flutter ensuring cross-platform compatibility and optimal performance across devices.",
+      "tags": [
+        "Flutter",
+        "Freelancing",
+        "Job Platform",
+        "Admin Panel"
+      ],
+      "main_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1515378791036-0648a814c963?w=600&h=400&fit=crop"
+      ],
+      "date": "Oct 2022 - Nov 2023",
+      "company": "DropIdea Team"
     }
   ],
   "experience": [
     {
-      "title": "Senior Flutter Developer",
-      "company": "Tech Solutions Inc.",
-      "date": "2020 - Present",
-      "description": "Led the development of several high-profile mobile apps, mentored junior developers, and established best practices for the mobile development team."
+      "title": "Software Developer",
+      "company": "Osous Technology LLC",
+      "date": "Feb 2024 - Present",
+      "location": "Damascus",
+      "description": "Specialized in eCommerce applications, building scalable solutions for online businesses. Developed and maintained applications for both mobile and web platforms. Built and contributed to several admin dashboards, implementing CRUD operations. Integrated Google Maps and tracking functionalities for real-time location services. Worked on delivery and logistics solutions, enhancing route optimization and live tracking. Integrated payment methods such as Zain Cash and other online payment gateways for seamless transactions. Ensured secure payment processing and compliance with industry standards."
     },
     {
-      "title": "Mobile App Developer",
-      "company": "Innovate Co.",
-      "date": "2018 - 2020",
-      "description": "Developed and maintained Android and iOS applications using Flutter, contributing to all phases of the development lifecycle, from concept to deployment."
+      "title": "Flutter Developer",
+      "company": "DropIdea Team",
+      "date": "Oct 2022 - Nov 2023",
+      "description": "Designed, developed, and deployed Mobile apps using Flutter. Created Invoice Management App & Admin Panel system for managing invoices, billing, and payments. Developed Home-Working App & Admin Panel platform for connecting freelancers with job opportunities. Ensured cross-platform compatibility and seamless performance across devices. Implemented authentication, data management, and backend integrations. Collaborated with teams to align business logic with front-end development."
     }
   ],
   "education": [
     {
-      "institution": "State University",
-      "degree": "B.S. in Computer Science",
-      "date": "2014 - 2018",
-      "description": "Focused on software engineering, data structures, and algorithms. Completed a final year project on mobile application development."
+      "institution": "Syrian Virtual University",
+      "degree": "Master of Web Science",
+      "date": "In Progress",
+      "description": "Advanced studies in web technologies, software engineering principles, and modern development practices. Focus on web science methodologies and cutting-edge technologies in software development."
+    },
+    {
+      "institution": "Homs University",
+      "degree": "Bachelor in Networks Engineering",
+      "date": "Completed",
+      "gpa": "80.999",
+      "description": "Comprehensive study of network engineering principles, computer systems, and software development fundamentals. Strong foundation in computer networks, system administration, and software engineering practices."
     }
   ]
 }

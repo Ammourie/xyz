@@ -3,12 +3,19 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Github, Linkedin, Twitter, Mail, Download } from 'lucide-react';
+import { Download } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { ProjectCard } from '@/components/project-card';
 import { EducationTimeline, ExperienceTimeline } from '@/components/timeline';
 import { AnimatedSection } from '@/components/animated-section';
 import { BackgroundDecorations } from '@/components/background-decorations';
+import { 
+  FaGithub, 
+  FaLinkedin, 
+  FaTwitter, 
+  FaTelegram 
+} from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 export default async function Home() {
   const data = await getPortfolioData();
@@ -32,22 +39,27 @@ export default async function Home() {
           <div className="flex gap-4 mt-6">
             <Button asChild variant="ghost" size="icon">
               <Link href={data.personal.social.github} target="_blank" aria-label="GitHub">
-                <Github />
+                <FaGithub />
               </Link>
             </Button>
             <Button asChild variant="ghost" size="icon">
               <Link href={data.personal.social.linkedin} target="_blank" aria-label="LinkedIn">
-                <Linkedin />
+                <FaLinkedin />
               </Link>
             </Button>
             <Button asChild variant="ghost" size="icon">
               <Link href={data.personal.social.twitter} target="_blank" aria-label="Twitter">
-                <Twitter />
+                <FaTwitter />
               </Link>
             </Button>
             <Button asChild variant="ghost" size="icon">
               <Link href={`mailto:${data.personal.email}`} aria-label="Email">
-                <Mail />
+                <MdEmail />
+              </Link>
+            </Button>
+            <Button asChild variant="ghost" size="icon">
+              <Link href={data.personal.social.telegram} target="_blank" aria-label="Telegram">
+                <FaTelegram />
               </Link>
             </Button>
           </div>
@@ -116,17 +128,17 @@ export default async function Home() {
             <div className="flex gap-2">
               <Button asChild variant="ghost" size="icon">
                 <Link href={data.personal.social.github} target="_blank" aria-label="GitHub">
-                  <Github />
+                  <FaGithub />
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="icon">
                 <Link href={data.personal.social.linkedin} target="_blank" aria-label="LinkedIn">
-                  <Linkedin />
+                  <FaLinkedin />
                 </Link>
               </Button>
               <Button asChild variant="ghost" size="icon">
                 <Link href={`mailto:${data.personal.email}`} aria-label="Email">
-                  <Mail />
+                  <MdEmail />
                 </Link>
               </Button>
             </div>

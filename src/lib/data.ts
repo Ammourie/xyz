@@ -19,12 +19,13 @@ export async function getPortfolioData(): Promise<PortfolioData> {
     console.error("Could not read or parse portfolio-data.json", error);
     // Return a default empty structure in case of an error
     return {
-      personal: { name: '', title: '', email: '', social: { github: '', linkedin: '', twitter: '' }, avatar: '' },
+      personal: { name: '', title: '', email: '', social: { github: '', linkedin: '', twitter: '', telegram: '' }, avatar: '' },
       about: '',
       skills: [],
       projects: [],
       experience: [],
       education: [],
+      theme: { primaryColor: '#000000', backgroundColor: '#ffffff', accentColor: '#000000' },
     };
   }
 }
