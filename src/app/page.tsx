@@ -7,15 +7,18 @@ import { Github, Linkedin, Twitter, Mail, Download } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { ProjectCard } from '@/components/project-card';
 import { EducationTimeline, ExperienceTimeline } from '@/components/timeline';
+import { AnimatedSection } from '@/components/animated-section';
+import { BackgroundDecorations } from '@/components/background-decorations';
 
 export default async function Home() {
   const data = await getPortfolioData();
 
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="relative flex flex-col min-h-screen bg-background overflow-x-hidden">
+      <BackgroundDecorations />
       <main className="flex-1 container mx-auto px-4 py-8 md:py-16">
         {/* Hero Section */}
-        <section id="hero" className="text-center flex flex-col items-center">
+        <AnimatedSection id="hero" className="text-center flex flex-col items-center">
           <Avatar className="w-32 h-32 mb-4 border-4 border-primary">
             <AvatarImage src={data.personal.avatar} alt={data.personal.name} data-ai-hint="professional headshot" />
             <AvatarFallback>{data.personal.name.charAt(0)}</AvatarFallback>
@@ -48,30 +51,30 @@ export default async function Home() {
               </Link>
             </Button>
           </div>
-        </section>
+        </AnimatedSection>
 
         {/* About Section */}
-        <section id="about" className="mt-24 max-w-3xl mx-auto">
+        <AnimatedSection id="about" className="mt-24 max-w-3xl mx-auto" delay={100}>
           <h2 className="text-3xl font-bold text-center font-headline mb-8">About Me</h2>
           <p className="text-lg text-center text-muted-foreground leading-relaxed">
             {data.about}
           </p>
-        </section>
+        </AnimatedSection>
 
         {/* Experience Section */}
-        <section id="experience" className="mt-24 max-w-3xl mx-auto">
+        <AnimatedSection id="experience" className="mt-24 max-w-3xl mx-auto" delay={200}>
           <h2 className="text-3xl font-bold text-center font-headline mb-12">Work Experience</h2>
           <ExperienceTimeline items={data.experience} />
-        </section>
+        </AnimatedSection>
 
         {/* Education Section */}
-        <section id="education" className="mt-24 max-w-3xl mx-auto">
+        <AnimatedSection id="education" className="mt-24 max-w-3xl mx-auto" delay={300}>
           <h2 className="text-3xl font-bold text-center font-headline mb-12">Education</h2>
           <EducationTimeline items={data.education} />
-        </section>
+        </AnimatedSection>
 
         {/* Skills Section */}
-        <section id="skills" className="mt-24">
+        <AnimatedSection id="skills" className="mt-24" delay={400}>
           <h2 className="text-3xl font-bold text-center font-headline mb-12">Skills</h2>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {data.skills.map((skill) => (
@@ -84,17 +87,17 @@ export default async function Home() {
               </div>
             ))}
           </div>
-        </section>
+        </AnimatedSection>
 
         {/* Projects Section */}
-        <section id="projects" className="mt-24">
+        <AnimatedSection id="projects" className="mt-24" delay={500}>
           <h2 className="text-3xl font-bold text-center font-headline mb-12">My Work</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.projects.map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>
-        </section>
+        </AnimatedSection>
       </main>
 
       {/* Footer */}

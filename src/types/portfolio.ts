@@ -41,6 +41,12 @@ export interface Education {
   description: string;
 }
 
+export interface ThemeConfig {
+  primaryColor: string;
+  backgroundColor: string;
+  accentColor: string;
+}
+
 export interface PortfolioData {
   personal: PersonalInfo;
   about: string;
@@ -48,4 +54,5 @@ export interface PortfolioData {
   projects: Project[];
   experience: Experience[];
   education: Education[];
+  theme: ThemeConfig;
 }

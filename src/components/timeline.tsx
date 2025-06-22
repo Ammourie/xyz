@@ -1,7 +1,6 @@
 'use client';
 
 import { Briefcase, GraduationCap } from 'lucide-react';
-import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
 import type { Education, Experience } from '@/types/portfolio';
 import React from 'react';
@@ -21,27 +20,19 @@ const TimelineItem = ({
   description: string;
   isLast: boolean;
 }) => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   return (
     <div
-      ref={ref}
       className={cn(
-        'relative pl-16 pb-12 transition-all duration-700 ease-out',
-        inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+        'relative pl-16 pb-12'
       )}
     >
       <div
         className={cn(
-          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 transition-all duration-500',
-          inView ? 'border-primary scale-100' : 'border-border scale-90'
+          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary'
         )}
       >
         {React.cloneElement(icon as React.ReactElement, {
-          className: cn('w-6 h-6 transition-colors duration-500', inView ? 'text-primary' : 'text-muted-foreground'),
+          className: cn('w-6 h-6 text-primary'),
         })}
       </div>
 
