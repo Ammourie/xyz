@@ -26,34 +26,90 @@ export interface Project {
   gallery_images: string[];
   source_code_url?: string;
   live_url?: string;
+  date?: string;
+  company?: string;
 }
 
 export interface Experience {
   title: string;
   company: string;
-  date: string;
+  period: string;
   description: string;
 }
 
 export interface Education {
   institution: string;
   degree: string;
-  date: string;
+  period: string;
   description: string;
 }
 
 export interface ThemeConfig {
-  primaryColor: string;
-  backgroundColor: string;
-  accentColor: string;
+  colors: {
+    primary: { [key: string]: string };
+    secondary: { [key: string]: string };
+    accent: { [key: string]: string };
+    neutral: { [key: string]: string };
+  };
+  typography: {
+    fontFamily: {
+      sans: string[];
+      headline: string[];
+      mono?: string[];
+    };
+    fontSize?: { [key: string]: string };
+  };
+  spacing?: { [key: string]: string };
+  shadows?: { [key: string]: string };
+  borderRadius?: { [key: string]: string };
 }
 
-export interface PortfolioData {
-  personal: PersonalInfo;
+export interface Navigation {
+  home: string;
   about: string;
-  skills: Skill[];
-  projects: Project[];
-  experience: Experience[];
-  education: Education[];
+  experience: string;
+  education: string;
+  skills: string;
+  projects: string;
+  contact: string;
+}
+
+export interface AboutSection {
+  title: string;
+  description: string;
+}
+
+export interface Sections {
+  experience: { title: string };
+  education: { title: string };
+  skills: { title: string };
+  projects: { 
+    title: string;
+    viewProject: string;
+    viewDetails: string;
+  };
+}
+
+export interface Footer {
+  copyright: string;
+  downloadJson: string;
+}
+
+export interface LocaleData {
+  displayName: string;
+  navigation: Navigation;
+  personal: PersonalInfo;
+  about: AboutSection;
+  sections: Sections;
+  footer: Footer;
+  skills?: Skill[];
+  experience?: Experience[];
+  education?: Education[];
+  projects?: Project[];
+}
+
+export interface PortfolioData extends LocaleData {
   theme: ThemeConfig;
 }
+
+export type Language = 'en' | 'ar';

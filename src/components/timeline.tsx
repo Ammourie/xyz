@@ -9,14 +9,14 @@ const TimelineItem = ({
   icon,
   title,
   subtitle,
-  date,
+  period,
   description,
   isLast,
 }: {
   icon: React.ReactNode;
   title: string;
   subtitle: string;
-  date: string;
+  period: string;
   description: string;
   isLast: boolean;
 }) => {
@@ -28,7 +28,7 @@ const TimelineItem = ({
     >
       <div
         className={cn(
-          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary'
+          'absolute left-0 top-1 flex h-12 w-12 items-center justify-center rounded-full bg-card border-2 border-primary shadow-lg'
         )}
       >
         {React.cloneElement(icon as React.ReactElement, {
@@ -42,7 +42,7 @@ const TimelineItem = ({
 
       <div className="flex flex-col items-start gap-1 sm:flex-row sm:items-center sm:justify-between">
         <h3 className="text-xl font-bold font-headline text-primary-foreground">{title}</h3>
-        <p className="flex-shrink-0 text-sm font-medium text-muted-foreground">{date}</p>
+        <p className="flex-shrink-0 text-sm font-medium text-muted-foreground">{period}</p>
       </div>
       <p className="mt-1 text-lg font-semibold text-primary">{subtitle}</p>
       <p className="mt-2 leading-relaxed text-muted-foreground">{description}</p>
@@ -60,7 +60,7 @@ export const ExperienceTimeline = ({ items }: { items: Experience[] }) => {
           icon={<Briefcase />}
           title={item.company}
           subtitle={item.title}
-          date={item.date}
+          period={item.period}
           description={item.description}
           isLast={index === items.length - 1}
         />
@@ -79,7 +79,7 @@ export const EducationTimeline = ({ items }: { items: Education[] }) => {
           icon={<GraduationCap />}
           title={item.institution}
           subtitle={item.degree}
-          date={item.date}
+          period={item.period}
           description={item.description}
           isLast={index === items.length - 1}
         />

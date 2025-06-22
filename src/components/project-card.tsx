@@ -5,8 +5,9 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Language } from '@/types/portfolio';
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ project, lang }: { project: Project; lang: Language }) {
   return (
     <Card className="flex flex-col overflow-hidden h-full group transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg hover:border-primary/50">
       <CardHeader className="p-0">
@@ -39,7 +40,7 @@ export function ProjectCard({ project }: { project: Project }) {
       </CardContent>
       <CardFooter className="p-6 pt-0">
         <Button asChild variant="outline" className="w-full">
-          <Link href={`/projects/${project.slug}`}>
+          <Link href={`/projects/${project.slug}?lang=${lang}`}>
             View Details <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>

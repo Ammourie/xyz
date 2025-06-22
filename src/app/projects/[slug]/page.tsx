@@ -1,4 +1,8 @@
-import { getProjectBySlug, getAllProjectSlugs } from '@/lib/data';
+import {
+  getProjectBySlug,
+  getAllProjectSlugs,
+  getAvailableLocales,
+} from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,18 +11,22 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import { ImageViewer, ImageGallery } from '@/components/image-viewer';
 import type { Metadata } from 'next';
+import { Language } from '@/types/portfolio';
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const project = await getProjectBySlug(slug);
+export async function generateMetadata(
+  { params, searchParams }: Props,
+): Promise<Metadata> {
+  const lang = (searchParams.lang as Language) || 'en';
+  const project = await getProjectBySlug(params.slug, lang);
 
   if (!project) {
     return {
-      title: 'Project Not Found'
+      title: 'Project Not Found',
     };
   }
 
@@ -28,15 +36,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-
 export async function generateStaticParams() {
-  const slugs = await getAllProjectSlugs();
-  return slugs;
+  const locales = await getAvailableLocales();
+  const params: { slug: string; lang: string }[] = [];
+
+  for (const lang of locales) {
+    const slugs = await getAllProjectSlugs(lang as Language);
+    slugs.forEach(s => {
+      params.push({ slug: s.slug, lang: lang });
+    });
+  }
+
+  return params;
 }
 
-export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const project = await getProjectBySlug(slug);
+export default async function ProjectPage({ params, searchParams }: Props) {
+  const lang = (searchParams.lang as Language) || 'en';
+  const project = await getProjectBySlug(params.slug, lang);
 
   if (!project) {
     notFound();
@@ -47,7 +63,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <main className="container mx-auto px-4 py-8 md:py-16">
         <div className="max-w-4xl mx-auto">
           <Button asChild variant="ghost" className="mb-8">
-            <Link href="/#projects">
+            <Link href={`/?lang=${lang}#projects`}>
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Projects
             </Link>

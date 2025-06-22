@@ -1,0 +1,264 @@
+{
+  "displayName": "العربية",
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "نبذة عني",
+    "experience": "الخبرة",
+    "education": "التعليم",
+    "skills": "المهارات",
+    "projects": "المشاريع",
+    "contact": "التواصل"
+  },
+  "personal": {
+    "name": "محمد عموري",
+    "title": "مطور برمجيات ومتخصص في فلاتر",
+    "email": "mohammed.ammourie@gmail.com",
+    "phone": "+963933564291",
+    "social": {
+      "linkedin": "https://linkedin.com/in/mohammed-al-ammourie",
+      "github": "https://github.com/Ammourie",
+      "twitter": "https://x.com/Ammourie99",
+      "telegram": "https://t.me/ammourie99"
+    },
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+  },
+  "about": {
+    "title": "نبذة عني",
+    "description": "مطور برمجيات شغوف يركز بقوة على تقديم تطبيقات عالية الجودة. خبرة في بناء حلول مبتكرة تعزز تجربة المستخدم وكفاءة الأعمال. ماهر في العمل في بيئات ديناميكية، والتعاون مع الفرق، والتعلم المستمر لتحسين وتكييف التحديات الجديدة. متخصص في تطوير فلاتر وتطبيقات التجارة الإلكترونية مع خبرة في منصات الهواتف المحمولة والويب."
+  },
+  "sections": {
+    "experience": {
+      "title": "الخبرة العملية"
+    },
+    "education": {
+      "title": "التعليم"
+    },
+    "skills": {
+      "title": "المهارات"
+    },
+    "projects": {
+      "title": "أعمالي",
+      "viewProject": "عرض المشروع",
+      "viewDetails": "عرض التفاصيل"
+    }
+  },
+  "footer": {
+    "copyright": "جميع الحقوق محفوظة.",
+    "downloadJson": "تنزيل JSON"
+  },
+  "skills": [
+    {
+      "name": "Flutter",
+      "level": 95
+    },
+    {
+      "name": "Firebase",
+      "level": 90
+    },
+    {
+      "name": "Next.js",
+      "level": 85
+    },
+    {
+      "name": "RESTful APIs",
+      "level": 90
+    },
+    {
+      "name": "Google Maps Integration",
+      "level": 85
+    },
+    {
+      "name": "Payment Integration",
+      "level": 80
+    },
+    {
+      "name": "Live Tracking",
+      "level": 85
+    },
+    {
+      "name": "Git",
+      "level": 90
+    },
+    {
+      "name": "Linux",
+      "level": 75
+    }
+  ],
+  "experience": [
+    {
+      "title": "مطور برمجيات",
+      "company": "شركة أسوس للتكنولوجيا",
+      "period": "فبراير 2024 - الحالي",
+      "description": "تخصصت في تطبيقات التجارة الإلكترونية، وبناء حلول قابلة للتوسع للأعمال التجارية عبر الإنترنت. طورت وصنت تطبيقات لكل من منصات الهواتف المحمولة والويب. ساهمت في بناء العديد من لوحات التحكم الإدارية، وتنفيذ عمليات CRUD. دمجت خرائط جوجل ووظائف التتبع لخدمات الموقع في الوقت الفعلي. عملت على حلول التوصيل والخدمات اللوجستية، مع تحسين تحسين المسارات والتتبع المباشر. دمجت طرق الدفع مثل زين كاش وبوابات الدفع الأخرى عبر الإنترنت لإجراء معاملات سلسة."
+    },
+    {
+      "title": "مطور فلاتر",
+      "company": "فريق دروب آيديا",
+      "period": "أكتوبر 2022 - نوفمبر 2023",
+      "description": "صممت وطورت ونشرت تطبيقات الهاتف المحمول باستخدام فلاتر. أنشأت تطبيق إدارة الفواتير ولوحة التحكم الإدارية لإدارة الفواتير والفوترة والمدفوعات. طورت تطبيق العمل من المنزل ومنصة لوحة التحكم الإدارية لربط العاملين المستقلين بفرص العمل. ضمنت التوافق عبر المنصات والأداء السلس عبر الأجهزة. نفذت المصادقة وإدارة البيانات والتكاملات الخلفية. تعاونت مع الفرق لمواءمة منطق الأعمال مع تطوير الواجهة الأمامية."
+    }
+  ],
+  "education": [
+    {
+      "degree": "ماجستير في علوم الويب",
+      "institution": "الجامعة الافتراضية السورية",
+      "period": "قيد الدراسة",
+      "description": "دراسات متقدمة في تقنيات الويب، ومبادئ هندسة البرمجيات، والممارسات التطويرية الحديثة. التركيز على منهجيات علوم الويب والتقنيات المتطورة في تطوير البرمجيات."
+    },
+    {
+      "degree": "بكالوريوس في هندسة الشبكات",
+      "institution": "جامعة حمص",
+      "period": "مكتمل",
+      "description": "دراسة شاملة لمبادئ هندسة الشبكات، وأنظمة الحاسوب، وأساسيات تطوير البرمجيات. أساس قوي في شبكات الحاسوب، وإدارة الأنظمة، وممارسات هندسة البرمجيات."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "maria-taxi-driver-redesigned",
+      "title": "ماريا تاكسي (إعادة تصميم واجهة السائق)",
+      "description_short": "خدمة تاكسي ونقل شاملة مع واجهة سائق معاد تصميمها تقدم أربع خدمات رئيسية تشمل التاكسي، الحافلات، والنقل السياحي.",
+      "description_long": "مشروع ماريا تاكسي هو منصة نقل شاملة تتكون من تطبيقين باستخدام فلاتر - واحد للعملاء وآخر للسائقين. توفر المنصة أربع خدمات أساسية: خدمة التاكسي حيث يمكن للعملاء طلب رحلات ويمكن للسائقين قبول الطلبات والتنقل بالركاب إلى وجهاتهم؛ خدمة الحافلات العامة التي تتيح للعملاء عرض الرحلات المتاحة وحجز المقاعد بينما يدير السائقون تفاصيل الرحلة؛ خدمة الحافلات السياحية التي تقدم خيارات سفر منظمة خصيصًا للرحلات السياحية؛ وخدمة حافلات المدارس التي لا تزال قيد التطوير. يتميز تطبيق السائق بواجهة معاد تصميمها مع وظائف محسنة لإدارة الرحلات، قبول طلبات الركوب، وتوفير خدمات التنقل السلسة. ساهمت في تطوير تطبيق السائق بالكامل مع جميع الوظائف الرئيسية لإدارة الرحلات وقبول طلبات الركوب، مع تنفيذ عدة تصاميم شاشات في تطبيق العميل لضمان تجربة مستخدم مثالية.",
+      "tags": [
+        "Flutter",
+        "Transportation",
+        "Live Tracking",
+        "Google Maps",
+        "Driver App",
+        "Mobile Development"
+      ],
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1733293387/q7jfrncrc8p2faakh3gn.webp",
+      "gallery_images": [
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293389/luz1rscfvcjrnmzfrc6j.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293391/dtqb549gzdmtug5qlfwu.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293392/aa79nfxyn80dhstnkltd.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293394/oo9zb9bvdptyr6rvzcr7.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293396/gxzb7b4mdgfexgcgnhnr.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293397/sgbcc0iyj5ac3ulliw9w.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293398/say3hop45q0bzahewiii.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293399/ia3ea7xnp8vzcropbgob.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293400/ubw70xrayoia4p4gyoyg.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293402/mc6igz4lhvp1v9m4grne.jpg"
+      ],
+      "date": "ديسمبر 2024",
+      "company": "شركة أسوس للتكنولوجيا"
+    },
+    {
+      "slug": "maria-taxi-customer-and-driver-applications",
+      "title": "ماريا تاكسي - تطبيقات العملاء والسائقين",
+      "description_short": "منصة نقل كاملة مع تطبيقين للعملاء والسائقين، تقدم خدمات التاكسي، الحافلات، والنقل السياحي.",
+      "description_long": "ماريا تاكسي هي منظومة نقل شاملة تم بناؤها باستخدام فلاتر، وتتميز بتطبيقين منفصلين للعملاء والسائقين. تقدم المنصة أربع خدمات أساسية: خدمة التاكسي التي تمكن العملاء من طلب الرحلات بينما يقبل السائقون وينقلون الركاب بكفاءة؛ خدمة الحافلات العامة حيث يتصفح العملاء الرحلات المتاحة ويحجزون المقاعد بينما يدير السائقون ويحدثون معلومات الرحلة؛ خدمة الحافلات السياحية التي توفر تجارب سفر منظمة متخصصة للسياح؛ وخدمة حافلات المدارس التي لا تزال قيد التطوير النشط. يضمن هذا النهج المزدوج تجارب مستخدم محسنة لكل من مقدمي الخدمة والمستهلكين، مع تكامل سلس بين طلبات العملاء وعمليات السائقين. دوري تضمن قيادة تطوير تطبيق السائق بالكامل، وتنفيذ جميع الوظائف الأساسية لإدارة الرحلات ومعالجة طلبات الركوب، مع المساهمة في تطبيق العميل من خلال تطوير تصاميم شاشات متعددة لضمان تجربة مستخدم متماسكة عبر كلا المنصتين.",
+      "tags": [
+        "Flutter",
+        "Transportation",
+        "Multi-Service Platform",
+        "Customer App",
+        "Driver App",
+        "Real-time Navigation"
+      ],
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729273035/hpuvnei0kp1ushnvpnx2.png",
+      "gallery_images": [
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273036/ibg0yzjgr8uxhfys10i2.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273037/id5hn2yszyjua7mzd1k2.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273038/o8b3mc4fbv52kwrx4wta.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273039/p6dpvwbaasbjrxwwhgoz.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273040/oegu6xwt5ulfhyblugxc.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273041/hdbo6gbgft06nc6sntxm.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273043/hhcfjwi3dfrkx2oal07h.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273044/p4d9p9ot0sgwwk2nkuf0.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273047/zdeprg8knzwymh9pwysz.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273048/tr77oa9zu80lgdjwkbbe.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273051/nr5cy6tdi5wudklhptb4.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273053/sysy2zdldkt3dxrbi3f4.png"
+      ],
+      "date": "أكتوبر 2024",
+      "company": "شركة أسوس للتكنولوجيا"
+    },
+    {
+      "slug": "fashion-modular-ecommerce-application",
+      "title": "فاشن - تطبيق التجارة الإلكترونية المعياري",
+      "description_short": "منصة تجارة إلكترونية مرنة ومعيارية للويب والهواتف المحمولة تبسط إنشاء ونشر المتاجر عبر الإنترنت.",
+      "description_long": "يمثل فاشن منصة تجارة إلكترونية متطورة مصممة لكل من بيئات الويب والهواتف المحمولة، تم تهيئتها لإحداث ثورة في عملية إنشاء ونشر المتاجر عبر الإنترنت. تتميز المنصة بهندسة معيارية قائمة على المكونات تمكن من التخصيص والنشر السريع لتطبيقات التجارة الإلكترونية المصممة حسب متطلبات الأعمال المتنوعة. مع نهج التصميم المعياري، يتيح فاشن للشركات التكيف بسرعة مع وجودها عبر الإنترنت، وتوسيع نطاق عملياتها بكفاءة، وتخصيص واجهاتها الرقمية دون الحاجة إلى تطوير مكثف. تعمل المنصة كأساس شامل لبناء حلول تجارة إلكترونية قوية يمكن أن تتطور مع تغير احتياجات الأعمال. تركز مساهمتي على تطوير القسم المخصص للهواتف المحمولة في المنصة، مع ضمان أن إطار التطبيق قابل للتكيف بدرجة عالية وسهل التخصيص لبناء تطبيقات التجارة الإلكترونية للهواتف المحمولة بسرعة وكفاءة.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Modular Architecture",
+        "Web Platform",
+        "Mobile Platform",
+        "Customizable Framework"
+      ],
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729818934/m6gz8txtt49gwyhdqzbg.png",
+      "gallery_images": [
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818938/y75pyuqlmhc4pmjgssgu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818940/fddf5mzapl5uzald199m.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818942/urqrrv2vavmibt7ubfhd.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818943/zfuqfpt6dd7a7ybbealv.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818944/ic8c46vl7jgjgtdaem2h.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818945/auravwyc3c6nbsyc6mrk.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818947/b9k1ybhrkccnednmchda.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818948/pewgxoogrlwmda6h2vdc.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818949/q2mme2bdwovciatbqaqk.png"
+      ],
+      "date": "أكتوبر 2024",
+      "company": "شركة أسوس للتكنولوجيا"
+    },
+    {
+      "slug": "epihope-epilepsy-patients-health-tracking-application",
+      "title": "إيبي هوب - تطبيق تتبع صحة مرضى الصرع",
+      "description_short": "تطبيق رعاية صحية شامل لمرضى الصرع والأطباء مع تتبع الصحة، إدارة الأدوية، والوصول إلى الأبحاث.",
+      "description_long": "إيبي هوب هو تطبيق إدارة رعاية صحية متطور مصمم خصيصًا لدعم مرضى الصرع والمهنيين الطبيين في إدارة المعلومات الصحية وأنظمة الأدوية بفعالية. يتميز المنصة ببوابتين متخصصتين: بوابة الأطباء التي توفر للمهنيين الطبيين الوصول إلى أحدث مقالات أبحاث الأدوية والدراسات المتطورة المتعلقة بالصرع، مما يبقيهم مطلعين على التطورات العلاجية؛ وبوابة المرضى التي تمكن المرضى من الوصول إلى نفس مواد الأبحاث مع توفير أدوات شاملة لتتبع النوبات الصحية، مراقبة الأعراض، وإدارة جداول الأدوية مع أنظمة تذكير تلقائية. يشمل المشروع لوحة تحكم إدارية متقدمة تم بناؤها باستخدام نكست.جي إس، مما يوفر للإداريين قدرات إدارة محتوى قوية للحفاظ على الموارد الطبية الواسعة للمنصة وتحديثها. تضمنت مساهمتي التعاون في تطوير لوحة التحكم الإدارية، وإنشاء وظائف إدارة المقالات الشاملة بما في ذلك الإنشاء، الحذف، التحرير، وميزات النشر، مع تطوير ميزات جانب المريض بالكامل في تطبيق فلاتر، مع التركيز على تتبع النوبات الصحية، إدارة الأدوية، وأنظمة التذكير لتعزيز رعاية المرضى والالتزام بالعلاج.",
+      "tags": [
+        "Flutter",
+        "Next.js",
+        "Healthcare",
+        "Medical Management",
+        "Admin Dashboard",
+        "Patient Care"
+      ],
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729259845/cypqbttgr0uwssr1ezro.png",
+      "gallery_images": [
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259846/btwydnroltgml0ayqizm.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259847/j4vcgatndaxgqync49b0.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259849/ahi5fjozkmcovsnfxmkg.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259853/kqitqemxehr0rgwe5tle.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259854/lxvkd4d48zs45r6ajwbt.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259856/wcxeoyqit889bnbioq1v.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259857/b8zo2ktuac4fwpnbzjim.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259858/alr1rssemmtw0cs2hntu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259859/mprap3z3p7omnuvtjmfh.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259860/hngk3b8zli98sflwlger.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259861/x2y1hxb1vlbkjgjq49ai.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259862/z9yjbroascrn87lx7egc.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259863/c703ctotssxefwbkllsc.png"
+      ],
+      "date": "أكتوبر 2024",
+      "company": "شركة أسوس للتكنولوجيا"
+    },
+    {
+      "slug": "ataa-electrician-app",
+      "title": "تطبيق عطاء - الكهربائي",
+      "description_short": "تطبيق تجارة إلكترونية قائم على فلاتر للكهربائيين لتصفح وشراء المنتجات من البائعين وكسب المكافآت.",
+      "description_long": "تطبيق عطاء للتجارة الإلكترونية للكهربائيين هو تطبيق مبتكر قائم على فلاتر مستوحى من مبادئ التجارة الإلكترونية المعيارية، ويشكل جزءًا من منظومة تطبيقين شاملة. بينما يمكّن أحد التطبيقات البائعين من إدارة منتجاتهم وخدماتهم بكفاءة، يوفر تطبيق عطاء للكهربائيين منصة سلسة لتصفح كتالوجات البائعين، واكتشاف المنتجات، وإجراء المشتريات مع نظام مكافآت مدمج. يتميز التطبيق بواجهة مستخدم بديهية لعرض ملفات البائعين وعروض منتجاتهم، ونظام عربة تسوق مبسط لاختيار المنتجات بسهولة، وعملية دفع آمنة وفعالة، وبرنامج مكافآت قائم على النقاط يتيح للكهربائيين كسب فوائد من شراكات البائعين، مما يخلق منظومة مفيدة لجميع الأطراف. دوري تضمن تطوير التطبيق الموجه للكهربائيين بالكامل مع التركيز على تحسين تجربة المستخدم لسوق المحترفين التجاريين، وتنفيذ نظام تصفح البائعين، ووظائف عربة التسوق، وعملية الدفع الآمنة، ونظام المكافآت القائم على النقاط المبتكر الذي يحفز على التفاعل المستمر مع المنصة.",
+      "tags": [
+        "Flutter",
+        "eCommerce",
+        "Vendor Management",
+        "Mobile App",
+        "Rewards System",
+        "B2B Platform"
+      ],
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1736848300/roxx1uim57jet3yktlwi.png",
+      "gallery_images": [
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848307/auncyivxb9tyntrliewu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848343/z3ahoiexfclmyixwhxcm.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848350/dq79o3las704n2kouncw.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848360/ygxpqm7apto75jnyzp7c.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848366/r7aod1muc17dtpahx1fu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848368/wsiugsgysh23ksqifmnp.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848370/ygxzvetzmfymywiqnov2.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848375/qx441k91fgc4l3swuaui.png"
+      ],
+      "date": "يناير 2025",
+      "company": "شركة أسوس للتكنولوجيا"
+    }
+  ]
+}

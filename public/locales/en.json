@@ -1,8 +1,13 @@
 {
-  "theme": {
-    "backgroundColor": "0 0% 20%",
-    "primaryColor": "210 100% 50%",
-    "accentColor": "180 100% 50%"
+  "displayName": "English",
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "personal": {
     "name": "Mohammed Ammourie",
@@ -17,7 +22,30 @@
     },
     "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
   },
-  "about": "A passionate software developer with a strong focus on delivering high-quality applications. Experienced in building innovative solutions that enhance user experience and business efficiency. Adept at working in dynamic environments, collaborating with teams, and continuously learning to improve and adapt to new challenges. Specialized in Flutter development and eCommerce applications with expertise in mobile and web platforms.",
+  "about": {
+    "title": "About Me",
+    "description": "A passionate software developer with a strong focus on delivering high-quality applications. Experienced in building innovative solutions that enhance user experience and business efficiency. Adept at working in dynamic environments, collaborating with teams, and continuously learning to improve and adapt to new challenges. Specialized in Flutter development and eCommerce applications with expertise in mobile and web platforms."
+  },
+  "sections": {
+    "experience": {
+      "title": "Work Experience"
+    },
+    "education": {
+      "title": "Education"
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "projects": {
+      "title": "My Work",
+      "viewProject": "View Project",
+      "viewDetails": "View Details"
+    }
+  },
+  "footer": {
+    "copyright": "All Rights Reserved.",
+    "downloadJson": "Download JSON"
+  },
   "skills": [
     {
       "name": "Flutter",
@@ -54,6 +82,34 @@
     {
       "name": "Linux",
       "level": 75
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Developer",
+      "company": "Osous Technology LLC",
+      "period": "Feb 2024 - Present",
+      "description": "Specialized in eCommerce applications, building scalable solutions for online businesses. Developed and maintained applications for both mobile and web platforms. Built and contributed to several admin dashboards, implementing CRUD operations. Integrated Google Maps and tracking functionalities for real-time location services. Worked on delivery and logistics solutions, enhancing route optimization and live tracking. Integrated payment methods such as Zain Cash and other online payment gateways for seamless transactions."
+    },
+    {
+      "title": "Flutter Developer",
+      "company": "DropIdea Team",
+      "period": "Oct 2022 - Nov 2023",
+      "description": "Designed, developed, and deployed Mobile apps using Flutter. Created Invoice Management App & Admin Panel system for managing invoices, billing, and payments. Developed Home-Working App & Admin Panel platform for connecting freelancers with job opportunities. Ensured cross-platform compatibility and seamless performance across devices. Implemented authentication, data management, and backend integrations. Collaborated with teams to align business logic with front-end development."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Web Science",
+      "institution": "Syrian Virtual University",
+      "period": "In Progress",
+      "description": "Advanced studies in web technologies, software engineering principles, and modern development practices. Focus on web science methodologies and cutting-edge technologies in software development."
+    },
+    {
+      "degree": "Bachelor in Networks Engineering",
+      "institution": "Homs University",
+      "period": "Completed",
+      "description": "Comprehensive study of network engineering principles, computer systems, and software development fundamentals. Strong foundation in computer networks, system administration, and software engineering practices."
     }
   ],
   "projects": [
@@ -203,36 +259,6 @@
       ],
       "date": "Jan 2025",
       "company": "Osous Technology LLC"
-    }
-  ],
-  "experience": [
-    {
-      "title": "Software Developer",
-      "company": "Osous Technology LLC",
-      "date": "Feb 2024 - Present",
-      "location": "Damascus",
-      "description": "Specialized in eCommerce applications, building scalable solutions for online businesses. Developed and maintained applications for both mobile and web platforms. Built and contributed to several admin dashboards, implementing CRUD operations. Integrated Google Maps and tracking functionalities for real-time location services. Worked on delivery and logistics solutions, enhancing route optimization and live tracking. Integrated payment methods such as Zain Cash and other online payment gateways for seamless transactions. Ensured secure payment processing and compliance with industry standards."
-    },
-    {
-      "title": "Flutter Developer",
-      "company": "DropIdea Team",
-      "date": "Oct 2022 - Nov 2023",
-      "description": "Designed, developed, and deployed Mobile apps using Flutter. Created Invoice Management App & Admin Panel system for managing invoices, billing, and payments. Developed Home-Working App & Admin Panel platform for connecting freelancers with job opportunities. Ensured cross-platform compatibility and seamless performance across devices. Implemented authentication, data management, and backend integrations. Collaborated with teams to align business logic with front-end development."
-    }
-  ],
-  "education": [
-    {
-      "institution": "Syrian Virtual University",
-      "degree": "Master of Web Science",
-      "date": "In Progress",
-      "description": "Advanced studies in web technologies, software engineering principles, and modern development practices. Focus on web science methodologies and cutting-edge technologies in software development."
-    },
-    {
-      "institution": "Homs University",
-      "degree": "Bachelor in Networks Engineering",
-      "date": "Completed",
-      "gpa": "80.999",
-      "description": "Comprehensive study of network engineering principles, computer systems, and software development fundamentals. Strong foundation in computer networks, system administration, and software engineering practices."
     }
   ]
 }
