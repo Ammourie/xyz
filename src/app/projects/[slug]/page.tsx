@@ -1,0 +1,123 @@
+import { getProjectBySlug, getAllProjectSlugs } from '@/lib/data';
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: { slug: string };
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const project = await getProjectBySlug(params.slug);
+
+  if (!project) {
+    return {
+      title: 'Project Not Found'
+    };
+  }
+
+  return {
+    title: `${project.title} | Darkfolio`,
+    description: project.description_short,
+  };
+}
+
+
+export async function generateStaticParams() {
+  const slugs = await getAllProjectSlugs();
+  return slugs;
+}
+
+export default async function ProjectPage({ params }: { params: { slug: string } }) {
+  const project = await getProjectBySlug(params.slug);
+
+  if (!project) {
+    notFound();
+  }
+
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <main className="container mx-auto px-4 py-8 md:py-16">
+        <div className="max-w-4xl mx-auto">
+          <Button asChild variant="ghost" className="mb-8">
+            <Link href="/#projects">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Projects
+            </Link>
+          </Button>
+
+          <article>
+            <header className="mb-8">
+              <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary-foreground mb-4">{project.title}</h1>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map(tag => (
+                  <Badge key={tag} variant="secondary">{tag}</Badge>
+                ))}
+              </div>
+            </header>
+
+            <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8">
+              <Image 
+                src={project.main_image} 
+                alt={`Main image for ${project.title}`} 
+                fill 
+                className="object-cover" 
+                data-ai-hint="app mockup"
+                priority
+              />
+            </div>
+            
+            <div className="flex flex-col md:flex-row gap-8 mb-8">
+                <div className="prose prose-invert max-w-none text-muted-foreground text-lg leading-relaxed flex-1">
+                    <p>{project.description_long}</p>
+                </div>
+                {(project.live_url || project.source_code_url) && (
+                    <div className="md:w-1/3 flex flex-col gap-4">
+                        {project.live_url && (
+                        <Button asChild size="lg" className="w-full">
+                            <Link href={project.live_url} target="_blank">
+                                <ExternalLink className="mr-2 h-4 w-4" />
+                                Live Demo
+                            </Link>
+                        </Button>
+                        )}
+                        {project.source_code_url && (
+                        <Button asChild variant="outline" size="lg" className="w-full">
+                            <Link href={project.source_code_url} target="_blank">
+                                <Github className="mr-2 h-4 w-4" />
+                                Source Code
+                            </Link>
+                        </Button>
+                        )}
+                    </div>
+                )}
+            </div>
+
+            {project.gallery_images && project.gallery_images.length > 0 && (
+              <section id="gallery">
+                <h2 className="text-3xl font-bold font-headline mb-6 mt-12">Gallery</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {project.gallery_images.map((img, index) => (
+                    <div key={index} className="relative w-full h-64 rounded-lg overflow-hidden shadow-md">
+                      <Image 
+                        src={img} 
+                        alt={`Gallery image ${index + 1} for ${project.title}`} 
+                        fill 
+                        className="object-cover"
+                        data-ai-hint="app screenshot"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
+          </article>
+        </div>
+      </main>
+    </div>
+  );
+}

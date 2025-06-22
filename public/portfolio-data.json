@@ -1,0 +1,53 @@
+
+{
+  "personal": {
+    "name": "Alex Doe",
+    "title": "Flutter Developer & UI/UX Enthusiast",
+    "email": "alex.doe@example.com",
+    "social": {
+      "github": "https://github.com",
+      "linkedin": "https://linkedin.com/in",
+      "twitter": "https://twitter.com"
+    },
+    "avatar": "https://placehold.co/128x128.png"
+  },
+  "about": "A passionate Flutter developer with a keen eye for beautiful, functional, and user-centered designs. I love bringing ideas to life on mobile and web platforms, constantly exploring new technologies and pushing the boundaries of what's possible with Dart and Flutter.",
+  "skills": [
+    { "name": "Flutter & Dart", "level": 95 },
+    { "name": "Firebase", "level": 90 },
+    { "name": "UI/UX Design", "level": 85 },
+    { "name": "REST APIs", "level": 80 },
+    { "name": "State Management (Bloc, Provider)", "level": 92 },
+    { "name": "Git & CI/CD", "level": 78 }
+  ],
+  "projects": [
+    {
+      "slug": "project-aurora",
+      "title": "Project Aurora",
+      "description_short": "A beautiful weather forecasting app with a focus on minimalist design and fluid animations.",
+      "description_long": "Project Aurora is a comprehensive weather application built entirely with Flutter. It leverages real-time weather APIs to provide accurate forecasts, historical data, and severe weather alerts. The app features a highly customized UI with smooth animations, light/dark themes, and a modular architecture using the BLoC pattern for state management. The backend is powered by Firebase for user authentication and storing preferences.",
+      "tags": ["Flutter", "Firebase", "API Integration", "UI/UX"],
+      "main_image": "https://placehold.co/600x400.png",
+      "gallery_images": [
+        "https://placehold.co/800x600.png",
+        "https://placehold.co/800x600.png",
+        "https://placehold.co/800x600.png"
+      ],
+      "source_code_url": "https://github.com",
+      "live_url": "https://example.com"
+    },
+    {
+      "slug": "fintech-folio",
+      "title": "FintechFolio",
+      "description_short": "A personal finance tracker that helps users manage their budgets and investments.",
+      "description_long": "FintechFolio is a secure and intuitive personal finance management application. Built with Flutter for cross-platform consistency, it integrates with Plaid API for bank account syncing. Features include budget creation, expense tracking, investment portfolio monitoring, and detailed financial reports. State management is handled with Provider, and data is stored securely on-device using SQLite.",
+      "tags": ["Flutter", "Finance", "Plaid API", "SQLite"],
+      "main_image": "https://placehold.co/600x400.png",
+      "gallery_images": [
+        "https://placehold.co/800x600.png",
+        "https://placehold.co/800x600.png"
+      ],
+      "source_code_url": "https://github.com"
+    }
+  ]
+}
