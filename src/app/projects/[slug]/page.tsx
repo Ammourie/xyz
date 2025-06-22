@@ -5,14 +5,16 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
+import { ImageViewer, ImageGallery } from '@/components/image-viewer';
 import type { Metadata } from 'next';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = await getProjectBySlug(params.slug);
+  const { slug } = await params;
+  const project = await getProjectBySlug(slug);
 
   if (!project) {
     return {
@@ -32,8 +34,9 @@ export async function generateStaticParams() {
   return slugs;
 }
 
-export default async function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = await getProjectBySlug(params.slug);
+export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = await getProjectBySlug(slug);
 
   if (!project) {
     notFound();
@@ -60,7 +63,11 @@ export default async function ProjectPage({ params }: { params: { slug: string }
               </div>
             </header>
 
-            <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8">
+            <ImageViewer 
+              src={project.main_image} 
+              alt={`Main image for ${project.title}`}
+              className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8"
+            >
               <Image 
                 src={project.main_image} 
                 alt={`Main image for ${project.title}`} 
@@ -69,7 +76,7 @@ export default async function ProjectPage({ params }: { params: { slug: string }
                 data-ai-hint="app mockup"
                 priority
               />
-            </div>
+            </ImageViewer>
             
             <div className="flex flex-col md:flex-row gap-8 mb-8">
                 <div className="prose prose-invert max-w-none text-muted-foreground text-lg leading-relaxed flex-1">
@@ -100,19 +107,10 @@ export default async function ProjectPage({ params }: { params: { slug: string }
             {project.gallery_images && project.gallery_images.length > 0 && (
               <section id="gallery">
                 <h2 className="text-3xl font-bold font-headline mb-6 mt-12">Gallery</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {project.gallery_images.map((img, index) => (
-                    <div key={index} className="relative w-full h-64 rounded-lg overflow-hidden shadow-md">
-                      <Image 
-                        src={img} 
-                        alt={`Gallery image ${index + 1} for ${project.title}`} 
-                        fill 
-                        className="object-cover"
-                        data-ai-hint="app screenshot"
-                      />
-                    </div>
-                  ))}
-                </div>
+                <ImageGallery 
+                  images={project.gallery_images}
+                  altPrefix={`Gallery image for ${project.title}`}
+                />
               </section>
             )}
           </article>

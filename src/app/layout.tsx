@@ -32,7 +32,10 @@ export default async function RootLayout({
       '--accent': accent,
     } as React.CSSProperties}>
       <head />
-      <body className="font-body antialiased">
+      <body 
+        className="font-body antialiased"
+        suppressHydrationWarning={true}
+      >
         {children}
         <Toaster />
       </body>
