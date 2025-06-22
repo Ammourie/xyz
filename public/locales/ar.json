@@ -260,5 +260,16 @@
       "date": "يناير 2025",
       "company": "شركة أسوس للتكنولوجيا"
     }
-  ]
+  ],
+  "static_strings": {
+    "view_details": "عرض التفاصيل",
+    "view_project": "عرض المشروع",
+    "gallery": "معرض الصور",
+    "company": "الشركة",
+    "description": "الوصف",
+    "tags": "الوسوم",
+    "main_image": "الصورة الرئيسية",
+    "gallery_images": "صور المعرض",
+    "date": "التاريخ"
+  }
 }

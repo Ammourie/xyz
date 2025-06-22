@@ -2,6 +2,7 @@ import {
   getProjectBySlug,
   getAllProjectSlugs,
   getAvailableLocales,
+  getPortfolioData,
 } from '@/lib/data';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -13,16 +14,17 @@ import { ImageViewer, ImageGallery } from '@/components/image-viewer';
 import type { Metadata } from 'next';
 import { Language } from '@/types/portfolio';
 
-type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
+interface Props {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ lang?: string }>;
+}
 export async function generateMetadata(
   { params, searchParams }: Props,
 ): Promise<Metadata> {
-  const lang = (searchParams.lang as Language) || 'en';
-  const project = await getProjectBySlug(params.slug, lang);
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  const lang = (resolvedSearchParams.lang as Language) || 'en';
+  const project = await getProjectBySlug(resolvedParams.slug, lang);
 
   if (!project) {
     return {
@@ -51,8 +53,14 @@ export async function generateStaticParams() {
 }
 
 export default async function ProjectPage({ params, searchParams }: Props) {
-  const lang = (searchParams.lang as Language) || 'en';
-  const project = await getProjectBySlug(params.slug, lang);
+  // Await params and searchParams to resolve their values
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+
+  // Safely access lang and slug
+  const lang = (resolvedSearchParams.lang as Language) || 'en';
+  const project = await getProjectBySlug(resolvedParams.slug, lang);
+  const data = await getPortfolioData(lang);
 
   if (!project) {
     notFound();
@@ -65,7 +73,7 @@ export default async function ProjectPage({ params, searchParams }: Props) {
           <Button asChild variant="ghost" className="mb-8">
             <Link href={`/?lang=${lang}#projects`}>
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Projects
+              {data.static_strings['back_to_projects']}
             </Link>
           </Button>
 
@@ -79,8 +87,8 @@ export default async function ProjectPage({ params, searchParams }: Props) {
               </div>
             </header>
 
-            <ImageViewer 
-              src={project.main_image} 
+            <ImageViewer
+              src={project.main_image}
               alt={`Main image for ${project.title}`}
               className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8 bg-black"
             >
@@ -92,46 +100,46 @@ export default async function ProjectPage({ params, searchParams }: Props) {
                 aria-hidden="true"
               />
               <div className="absolute inset-0 bg-blue-950/50" />
-              <Image 
-                src={project.main_image} 
-                alt={`Main image for ${project.title}`} 
-                fill 
-                className="object-contain" 
+              <Image
+                src={project.main_image}
+                alt={`Main image for ${project.title}`}
+                fill
+                className="object-contain"
                 data-ai-hint="app mockup"
                 priority
               />
             </ImageViewer>
-            
+
             <div className="flex flex-col md:flex-row gap-8 mb-8">
-                <div className="prose prose-invert max-w-none text-muted-foreground text-lg leading-relaxed flex-1">
-                    <p>{project.description_long}</p>
+              <div className="prose prose-invert max-w-none text-muted-foreground text-lg leading-relaxed flex-1">
+                <p>{project.description_long}</p>
+              </div>
+              {(project.live_url || project.source_code_url) && (
+                <div className="md:w-1/3 flex flex-col gap-4">
+                  {project.live_url && (
+                    <Button asChild size="lg" className="w-full">
+                      <Link href={project.live_url} target="_blank">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Link>
+                    </Button>
+                  )}
+                  {project.source_code_url && (
+                    <Button asChild variant="outline" size="lg" className="w-full">
+                      <Link href={project.source_code_url} target="_blank">
+                        <Github className="mr-2 h-4 w-4" />
+                        Source Code
+                      </Link>
+                    </Button>
+                  )}
                 </div>
-                {(project.live_url || project.source_code_url) && (
-                    <div className="md:w-1/3 flex flex-col gap-4">
-                        {project.live_url && (
-                        <Button asChild size="lg" className="w-full">
-                            <Link href={project.live_url} target="_blank">
-                                <ExternalLink className="mr-2 h-4 w-4" />
-                                Live Demo
-                            </Link>
-                        </Button>
-                        )}
-                        {project.source_code_url && (
-                        <Button asChild variant="outline" size="lg" className="w-full">
-                            <Link href={project.source_code_url} target="_blank">
-                                <Github className="mr-2 h-4 w-4" />
-                                Source Code
-                            </Link>
-                        </Button>
-                        )}
-                    </div>
-                )}
+              )}
             </div>
 
             {project.gallery_images && project.gallery_images.length > 0 && (
               <section id="gallery">
-                <h2 className="text-3xl font-bold font-headline mb-6 mt-12">Gallery</h2>
-                <ImageGallery 
+                <h2 className="text-3xl font-bold font-headline mb-6 mt-12">{data.static_strings['gallery']}</h2>
+                <ImageGallery
                   images={project.gallery_images}
                   altPrefix={`Gallery image for ${project.title}`}
                 />

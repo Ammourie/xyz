@@ -23,7 +23,7 @@ interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-function isLanguage(lang: any): lang is Language {
+export function isLanguage(lang: any): lang is Language {
   return lang === 'en' || lang === 'ar';
 }
 

@@ -6,8 +6,12 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Language } from '@/types/portfolio';
+import { getPortfolioData } from '@/lib/data';
+import { isLanguage } from '@/app/page';
 
-export function ProjectCard({ project, lang }: { project: Project; lang: Language }) {
+export async function ProjectCard({ project, lang }: { project: Project; lang: Language }) {
+  const currentLanguage: Language = isLanguage(lang) ? lang : 'en';
+  const data = await getPortfolioData(currentLanguage);
   return (
     <Card className="flex flex-col overflow-hidden h-full group transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg hover:border-primary/50">
       <CardHeader className="p-0">
@@ -41,7 +45,7 @@ export function ProjectCard({ project, lang }: { project: Project; lang: Languag
       <CardFooter className="p-6 pt-0">
         <Button asChild variant="outline" className="w-full">
           <Link href={`/projects/${project.slug}?lang=${lang}`}>
-            View Details <ArrowRight className="ml-2 h-4 w-4" />
+            {data.static_strings['view_details']} <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
       </CardFooter>

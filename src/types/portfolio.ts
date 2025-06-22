@@ -106,6 +106,7 @@ export interface LocaleData {
   experience?: Experience[];
   education?: Education[];
   projects?: Project[];
+  static_strings: { [key: string]: string };
 }
 
 export interface PortfolioData extends LocaleData {
