@@ -1,12 +1,12 @@
 import { getPortfolioData } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Github, Linkedin, Twitter, Mail, Download, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Twitter, Mail, Download } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
 import { ProjectCard } from '@/components/project-card';
+import { EducationTimeline, ExperienceTimeline } from '@/components/timeline';
 
 export default async function Home() {
   const data = await getPortfolioData();
@@ -56,6 +56,18 @@ export default async function Home() {
           <p className="text-lg text-center text-muted-foreground leading-relaxed">
             {data.about}
           </p>
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="mt-24 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center font-headline mb-12">Work Experience</h2>
+          <ExperienceTimeline items={data.experience} />
+        </section>
+
+        {/* Education Section */}
+        <section id="education" className="mt-24 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center font-headline mb-12">Education</h2>
+          <EducationTimeline items={data.education} />
         </section>
 
         {/* Skills Section */}

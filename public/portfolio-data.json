@@ -1,53 +1,82 @@
-
 {
   "personal": {
     "name": "Alex Doe",
-    "title": "Flutter Developer & UI/UX Enthusiast",
+    "title": "Flutter & Next.js Developer",
     "email": "alex.doe@example.com",
     "social": {
-      "github": "https://github.com",
-      "linkedin": "https://linkedin.com/in",
-      "twitter": "https://twitter.com"
+      "github": "https://github.com/johndoe",
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "twitter": "https://twitter.com/johndoe"
     },
-    "avatar": "https://placehold.co/128x128.png"
+    "avatar": "https://placehold.co/200x200.png"
   },
-  "about": "A passionate Flutter developer with a keen eye for beautiful, functional, and user-centered designs. I love bringing ideas to life on mobile and web platforms, constantly exploring new technologies and pushing the boundaries of what's possible with Dart and Flutter.",
+  "about": "I'm a passionate Flutter developer with a love for creating beautiful and functional mobile applications. I thrive on bringing ideas to life, from concept to deployment. With a strong background in Dart and a keen eye for UI/UX, I specialize in building cross-platform apps that provide a seamless user experience. I am also proficient in Next.js for building performant web applications.",
+  "experience": [
+    {
+      "title": "Senior Flutter Developer",
+      "company": "Tech Solutions Inc.",
+      "date": "Jan 2021 - Present",
+      "description": "Led the development of a flagship cross-platform mobile application using Flutter, resulting in a 40% increase in user engagement. Mentored junior developers and established best practices for code quality and testing."
+    },
+    {
+      "title": "Mobile App Developer",
+      "company": "Innovate Apps",
+      "date": "Jun 2018 - Dec 2020",
+      "description": "Developed and maintained several iOS and Android applications. Contributed to all phases of the development lifecycle, from initial design to App Store/Play Store submission."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Technology",
+      "degree": "B.S. in Computer Science",
+      "date": "2014 - 2018",
+      "description": "Graduated with honors. Focused on mobile development and human-computer interaction. President of the Mobile Dev Club."
+    }
+  ],
   "skills": [
     { "name": "Flutter & Dart", "level": 95 },
-    { "name": "Firebase", "level": 90 },
-    { "name": "UI/UX Design", "level": 85 },
-    { "name": "REST APIs", "level": 80 },
-    { "name": "State Management (Bloc, Provider)", "level": 92 },
-    { "name": "Git & CI/CD", "level": 78 }
+    { "name": "Next.js & React", "level": 90 },
+    { "name": "TypeScript", "level": 85 },
+    { "name": "Firebase", "level": 80 },
+    { "name": "UI/UX Design", "level": 75 },
+    { "name": "State Management (Bloc, Riverpod)", "level": 90 }
   ],
   "projects": [
     {
-      "slug": "project-aurora",
-      "title": "Project Aurora",
-      "description_short": "A beautiful weather forecasting app with a focus on minimalist design and fluid animations.",
-      "description_long": "Project Aurora is a comprehensive weather application built entirely with Flutter. It leverages real-time weather APIs to provide accurate forecasts, historical data, and severe weather alerts. The app features a highly customized UI with smooth animations, light/dark themes, and a modular architecture using the BLoC pattern for state management. The backend is powered by Firebase for user authentication and storing preferences.",
-      "tags": ["Flutter", "Firebase", "API Integration", "UI/UX"],
+      "slug": "awesome-chat-app",
+      "title": "Awesome Chat App",
+      "description_short": "A real-time chat application built with Flutter and Firebase.",
+      "description_long": "This project is a full-featured chat application demonstrating real-time messaging, user authentication, and profile management. It uses Firebase for backend services including Firestore for data storage and Firebase Authentication for user management. The UI is crafted to be intuitive and responsive.",
+      "tags": ["Flutter", "Firebase", "Dart", "Real-time"],
       "main_image": "https://placehold.co/600x400.png",
       "gallery_images": [
-        "https://placehold.co/800x600.png",
-        "https://placehold.co/800x600.png",
-        "https://placehold.co/800x600.png"
+        "https://placehold.co/600x400.png",
+        "https://placehold.co/600x400.png"
       ],
-      "source_code_url": "https://github.com",
-      "live_url": "https://example.com"
+      "source_code_url": "https://github.com/johndoe/chat-app",
+      "live_url": "https://chat.example.com"
     },
     {
-      "slug": "fintech-folio",
-      "title": "FintechFolio",
-      "description_short": "A personal finance tracker that helps users manage their budgets and investments.",
-      "description_long": "FintechFolio is a secure and intuitive personal finance management application. Built with Flutter for cross-platform consistency, it integrates with Plaid API for bank account syncing. Features include budget creation, expense tracking, investment portfolio monitoring, and detailed financial reports. State management is handled with Provider, and data is stored securely on-device using SQLite.",
-      "tags": ["Flutter", "Finance", "Plaid API", "SQLite"],
+      "slug": "e-commerce-store",
+      "title": "E-Commerce Store",
+      "description_short": "A modern e-commerce PWA built with Next.js and Tailwind CSS.",
+      "description_long": "A complete e-commerce solution with product listings, a shopping cart, and a checkout process. Built with Next.js for server-side rendering and static site generation, ensuring fast load times and excellent SEO. Styled with Tailwind CSS for a modern, responsive design.",
+      "tags": ["Next.js", "React", "Tailwind CSS", "E-commerce"],
+      "main_image": "https://placehold.co/600x400.png",
+      "gallery_images": [],
+      "source_code_url": "https://github.com/johndoe/ecommerce"
+    },
+    {
+      "slug": "task-manager",
+      "title": "Task Manager",
+      "description_short": "A simple and elegant task management app to boost productivity.",
+      "description_long": "This task manager helps users organize their daily tasks with a clean and minimalistic interface. Features include task creation, due dates, priority levels, and project categorization. Built with Flutter for a smooth cross-platform experience.",
+      "tags": ["Flutter", "Productivity", "Dart"],
       "main_image": "https://placehold.co/600x400.png",
       "gallery_images": [
-        "https://placehold.co/800x600.png",
-        "https://placehold.co/800x600.png"
+        "https://placehold.co/600x400.png"
       ],
-      "source_code_url": "https://github.com"
+      "live_url": "https://tasks.example.com"
     }
   ]
 }

@@ -27,9 +27,25 @@ export interface Project {
   live_url?: string;
 }
 
+export interface Experience {
+  title: string;
+  company: string;
+  date: string;
+  description: string;
+}
+
+export interface Education {
+  institution: string;
+  degree: string;
+  date: string;
+  description: string;
+}
+
 export interface PortfolioData {
   personal: PersonalInfo;
   about: string;
   skills: Skill[];
   projects: Project[];
+  experience: Experience[];
+  education: Education[];
 }

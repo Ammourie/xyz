@@ -23,6 +23,8 @@ export async function getPortfolioData(): Promise<PortfolioData> {
       about: '',
       skills: [],
       projects: [],
+      experience: [],
+      education: [],
     };
   }
 }
