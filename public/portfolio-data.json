@@ -58,124 +58,151 @@
   ],
   "projects": [
     {
-      "slug": "ataa-electrician",
-      "title": "Ataa-Electrician eCommerce App",
-      "description_short": "A Flutter-based eCommerce application for electricians to browse and purchase products from vendors.",
-      "description_long": "The Ataa eCommerce Electrician App is a Flutter-based application inspired by the modular eCommerce project. It allows electricians to browse and purchase products from vendors, view products, add items to their cart, complete the checkout process, and earn points from vendors. This app is part of a two-app system, with the other app designed for vendors to manage their products and services.",
+      "slug": "maria-taxi-driver-redesigned",
+      "title": "Maria Taxi (Driver Redesigned)",
+      "description_short": "A comprehensive taxi and transportation service with redesigned driver interface offering four main services including taxi, bus, and tourism transportation.",
+      "description_long": "The Maria Taxi project is a comprehensive transportation platform consisting of two Flutter applications - one for customers and another for drivers. The platform provides four essential services: Taxi Service where customers can request rides and drivers can accept requests while navigating passengers to their destinations; General Bus Service allowing customers to view available trips and book seats while drivers manage trip details; Tourism Bus Service offering organized travel options specifically for tourism trips; and School Bus Service which is currently under development. The driver application features a redesigned interface with enhanced functionality for managing trips, accepting ride requests, and providing seamless navigation services. My contribution involved developing the complete driver application with all key functionalities for managing trips and accepting ride requests, while also implementing several screen designs in the customer application to ensure optimal user experience.",
       "tags": [
         "Flutter",
-        "eCommerce",
-        "Vendor Management",
-        "Mobile App"
-      ],
-      "main_image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=400&fit=crop",
-      "gallery_images": [
-        "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop"
-      ],
-      "date": "Nov 2024 - Dec 2024",
-      "company": "Osous Technology LLC"
-    },
-    {
-      "slug": "maria-taxi",
-      "title": "Maria Taxi - Ride Hailing Platform",
-      "description_short": "A comprehensive taxi and transportation service with customer and driver applications.",
-      "description_long": "The Maria Taxi project comprises two Flutter applications: one for customers and the other for drivers. The customer application enables users to request a taxi, view available bus trips, book seats, and access tourism bus services. The driver application allows drivers to accept taxi ride requests, manage bus trips, and update trip details. Additionally, the project includes a school bus service, which is currently under development.",
-      "tags": [
-        "Flutter",
+        "Transportation",
         "Live Tracking",
         "Google Maps",
-        "Transportation"
+        "Driver App",
+        "Mobile Development"
       ],
-      "main_image": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1733293387/q7jfrncrc8p2faakh3gn.webp",
       "gallery_images": [
-        "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1558618047-3c8c76ca7890?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=400&fit=crop"
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293389/luz1rscfvcjrnmzfrc6j.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293391/dtqb549gzdmtug5qlfwu.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293392/aa79nfxyn80dhstnkltd.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293394/oo9zb9bvdptyr6rvzcr7.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293396/gxzb7b4mdgfexgcgnhnr.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293397/sgbcc0iyj5ac3ulliw9w.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293398/say3hop45q0bzahewiii.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293399/ia3ea7xnp8vzcropbgob.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293400/ubw70xrayoia4p4gyoyg.jpg",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1733293402/mc6igz4lhvp1v9m4grne.jpg"
       ],
-      "date": "Aug 2024 - Oct 2024",
+      "date": "Dec 2024",
       "company": "Osous Technology LLC"
     },
     {
-      "slug": "epihope",
-      "title": "EpiHope - Medical Management Platform",
-      "description_short": "An application designed to assist epilepsy patients and doctors in managing health information and medications.",
-      "description_long": "EpiHope is an application designed to assist epilepsy patients and doctors in managing health information and medications. It includes two main sections: the Doctor's Portal for accessing research articles, and the Patient's Portal for tracking health episodes and managing medications. The project also features an Admin Dashboard built with Next.js for content management.",
+      "slug": "maria-taxi-customer-and-driver-applications",
+      "title": "Maria Taxi – Customer and Driver Applications",
+      "description_short": "Complete transportation platform with dual applications for customers and drivers, offering taxi, bus, and tourism services.",
+      "description_long": "Maria Taxi is a comprehensive transportation ecosystem built with Flutter, featuring separate applications for customers and drivers. The platform delivers four core services: a Taxi Service enabling customers to request rides while drivers can accept and navigate passengers efficiently; a General Bus Service where customers browse available trips and book seats while drivers manage and update trip information; a Tourism Bus Service providing specialized organized travel experiences for tourists; and a School Bus Service currently in active development. This dual-app approach ensures optimized user experiences for both service providers and consumers, with seamless integration between customer requests and driver operations. My role involved leading the development of the complete driver application, implementing all essential functionalities for trip management and ride request handling, while also contributing to the customer application by developing multiple screen designs to ensure a cohesive user experience across both platforms.",
       "tags": [
         "Flutter",
-        "Next.js",
-        "Healthcare",
-        "Admin Dashboard"
+        "Transportation",
+        "Multi-Service Platform",
+        "Customer App",
+        "Driver App",
+        "Real-time Navigation"
       ],
-      "main_image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729273035/hpuvnei0kp1ushnvpnx2.png",
       "gallery_images": [
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&h=400&fit=crop"
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273036/ibg0yzjgr8uxhfys10i2.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273037/id5hn2yszyjua7mzd1k2.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273038/o8b3mc4fbv52kwrx4wta.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273039/p6dpvwbaasbjrxwwhgoz.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273040/oegu6xwt5ulfhyblugxc.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273041/hdbo6gbgft06nc6sntxm.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273043/hhcfjwi3dfrkx2oal07h.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273044/p4d9p9ot0sgwwk2nkuf0.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273047/zdeprg8knzwymh9pwysz.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273048/tr77oa9zu80lgdjwkbbe.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273051/nr5cy6tdi5wudklhptb4.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729273053/sysy2zdldkt3dxrbi3f4.png"
       ],
-      "date": "Jun 2024 - Jul 2024",
+      "date": "Oct 2024",
       "company": "Osous Technology LLC"
     },
     {
-      "slug": "fashion-modular-ecommerce",
-      "title": "Fashion - Modular eCommerce Platform",
-      "description_short": "A modular eCommerce platform designed to simplify and streamline the development of eCommerce applications.",
-      "description_long": "Fashion is a modular eCommerce platform designed to simplify and streamline the development of eCommerce applications. It consists of a wide range of customizable plugins that can be easily turned on or off, allowing developers to create diverse variations of eCommerce apps tailored to specific business needs. The platform provides flexibility and scalability for various business requirements.",
+      "slug": "fashion-modular-ecommerce-application",
+      "title": "Fashion – Modular eCommerce Application",
+      "description_short": "A flexible modular eCommerce platform for web and mobile that streamlines online store creation and deployment.",
+      "description_long": "Fashion represents a cutting-edge modular eCommerce platform designed for both web and mobile environments, engineered to revolutionize the process of creating and deploying online stores. The platform features a flexible, component-based architecture that enables rapid customization and deployment of eCommerce applications tailored to diverse business requirements. With its modular design approach, Fashion allows businesses to quickly adapt their online presence, scale their operations efficiently, and customize their digital storefronts without extensive development overhead. The platform serves as a comprehensive foundation for building robust eCommerce solutions that can evolve with changing business needs. My contribution focused on developing the mobile section of the platform, ensuring the application framework is highly adaptable and easily customizable for building mobile eCommerce applications quickly and efficiently.",
       "tags": [
         "Flutter",
         "eCommerce",
         "Modular Architecture",
-        "Plugins"
+        "Web Platform",
+        "Mobile Platform",
+        "Customizable Framework"
       ],
-      "main_image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729818934/m6gz8txtt49gwyhdqzbg.png",
       "gallery_images": [
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop"
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818938/y75pyuqlmhc4pmjgssgu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818940/fddf5mzapl5uzald199m.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818942/urqrrv2vavmibt7ubfhd.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818943/zfuqfpt6dd7a7ybbealv.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818944/ic8c46vl7jgjgtdaem2h.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818945/auravwyc3c6nbsyc6mrk.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818947/b9k1ybhrkccnednmchda.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818948/pewgxoogrlwmda6h2vdc.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729818949/q2mme2bdwovciatbqaqk.png"
       ],
-      "date": "Feb 2024 - Jun 2024",
+      "date": "Oct 2024",
       "company": "Osous Technology LLC"
     },
     {
-      "slug": "invoice-management-app",
-      "title": "Invoice Management System",
-      "description_short": "A comprehensive system for managing invoices, billing, and payments with admin panel.",
-      "description_long": "Created a comprehensive Invoice Management App & Admin Panel system for managing invoices, billing, and payments. The application provides features for creating, tracking, and managing invoices, with secure payment processing and detailed reporting capabilities. Built with Flutter for cross-platform compatibility and seamless performance.",
+      "slug": "epihope-epilepsy-patients-health-tracking-application",
+      "title": "EpiHope – Epilepsy Patients Health Tracking Application",
+      "description_short": "Comprehensive healthcare application for epilepsy patients and doctors with health tracking, medication management, and research access.",
+      "description_long": "EpiHope is a sophisticated healthcare management application specifically designed to support epilepsy patients and medical professionals in effectively managing health information and medication regimens. The platform features two specialized portals: the Doctor's Portal provides healthcare professionals with access to the latest medication research articles and cutting-edge epilepsy-related studies, keeping them informed about treatment advances; the Patient's Portal empowers patients with access to the same research materials while offering comprehensive tools for tracking health episodes, monitoring symptoms, and managing medication schedules with automated reminder systems. The project encompasses an advanced Admin Dashboard built with Next.js, providing administrators with powerful content management capabilities to maintain and update the platform's extensive medical resources. My contribution involved collaborating on the admin dashboard development, creating comprehensive article management functionality including creation, deletion, editing, and publishing features, while also developing the complete patient-side features in the Flutter application, focusing on health episode tracking, medication management, and reminder systems to enhance patient care and treatment adherence.",
       "tags": [
         "Flutter",
-        "Invoice Management",
-        "Admin Panel",
-        "Payment Processing"
+        "Next.js",
+        "Healthcare",
+        "Medical Management",
+        "Admin Dashboard",
+        "Patient Care"
       ],
-      "main_image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1729259845/cypqbttgr0uwssr1ezro.png",
       "gallery_images": [
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259846/btwydnroltgml0ayqizm.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259847/j4vcgatndaxgqync49b0.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259849/ahi5fjozkmcovsnfxmkg.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259853/kqitqemxehr0rgwe5tle.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259854/lxvkd4d48zs45r6ajwbt.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259856/wcxeoyqit889bnbioq1v.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259857/b8zo2ktuac4fwpnbzjim.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259858/alr1rssemmtw0cs2hntu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259859/mprap3z3p7omnuvtjmfh.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259860/hngk3b8zli98sflwlger.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259861/x2y1hxb1vlbkjgjq49ai.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259862/z9yjbroascrn87lx7egc.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1729259863/c703ctotssxefwbkllsc.png"
       ],
-      "date": "Oct 2022 - Nov 2023",
-      "company": "DropIdea Team"
+      "date": "Oct 2024",
+      "company": "Osous Technology LLC"
     },
     {
-      "slug": "home-working-app",
-      "title": "Home-Working Platform",
-      "description_short": "A platform for connecting freelancers with job opportunities with comprehensive admin panel.",
-      "description_long": "Developed a Home-Working App & Admin Panel platform for connecting freelancers with job opportunities. The application provides features for job posting, freelancer profiles, project management, and secure communication between clients and freelancers. Built with Flutter ensuring cross-platform compatibility and optimal performance across devices.",
+      "slug": "ataa-electrician-app",
+      "title": "Ataa-Electrician App",
+      "description_short": "Flutter-based eCommerce application for electricians to browse, purchase products from vendors, and earn rewards.",
+      "description_long": "The Ataa eCommerce Electrician App is an innovative Flutter-based application inspired by modular eCommerce principles, serving as part of a comprehensive two-application ecosystem. While one application empowers vendors to manage their products and services efficiently, the Ataa Electrician App provides electricians with a seamless platform to browse vendor catalogs, discover products, and make purchases with an integrated rewards system. The application features an intuitive interface for viewing vendor profiles and their product offerings, a streamlined shopping cart system for easy product selection, a secure and efficient checkout process, and a points-based rewards program that allows electricians to earn benefits from vendor partnerships, creating a mutually beneficial ecosystem for all stakeholders. My role involved developing the complete electrician-facing application with a focus on user experience optimization for the trade professional market, implementing the vendor browsing system, shopping cart functionality, secure checkout process, and the innovative points-based rewards system that incentivizes continued platform engagement.",
       "tags": [
         "Flutter",
-        "Freelancing",
-        "Job Platform",
-        "Admin Panel"
+        "eCommerce",
+        "Vendor Management",
+        "Mobile App",
+        "Rewards System",
+        "B2B Platform"
       ],
-      "main_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
+      "main_image": "http://res.cloudinary.com/doujfg8db/image/upload/v1736848300/roxx1uim57jet3yktlwi.png",
       "gallery_images": [
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1515378791036-0648a814c963?w=600&h=400&fit=crop"
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848307/auncyivxb9tyntrliewu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848343/z3ahoiexfclmyixwhxcm.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848350/dq79o3las704n2kouncw.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848360/ygxpqm7apto75jnyzp7c.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848366/r7aod1muc17dtpahx1fu.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848368/wsiugsgysh23ksqifmnp.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848370/ygxzvetzmfymywiqnov2.png",
+        "http://res.cloudinary.com/doujfg8db/image/upload/v1736848375/qx441k91fgc4l3swuaui.png"
       ],
-      "date": "Oct 2022 - Nov 2023",
-      "company": "DropIdea Team"
+      "date": "Jan 2025",
+      "company": "Osous Technology LLC"
     }
   ],
   "experience": [

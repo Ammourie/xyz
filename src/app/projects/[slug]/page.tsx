@@ -66,13 +66,21 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <ImageViewer 
               src={project.main_image} 
               alt={`Main image for ${project.title}`}
-              className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8"
+              className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg mb-8 bg-black"
             >
+              <Image
+                src={project.main_image}
+                alt=""
+                fill
+                className="object-cover blur-md scale-110"
+                aria-hidden="true"
+              />
+              <div className="absolute inset-0 bg-blue-950/50" />
               <Image 
                 src={project.main_image} 
                 alt={`Main image for ${project.title}`} 
                 fill 
-                className="object-cover" 
+                className="object-contain" 
                 data-ai-hint="app mockup"
                 priority
               />

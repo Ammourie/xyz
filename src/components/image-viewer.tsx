@@ -28,20 +28,18 @@ export function ImageViewer({ src, alt, className, children }: ImageViewerProps)
           {children}
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 border-0 bg-transparent">
+      <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 border-0 bg-transparent flex items-center justify-center">
         <VisuallyHidden>
           <DialogTitle>Image Viewer</DialogTitle>
         </VisuallyHidden>
-        <div className="relative w-full h-full flex items-center justify-center">
-          <Image
-            src={src}
-            alt={alt}
-            width={1200}
-            height={800}
-            className="max-w-full max-h-full object-contain rounded-lg"
-            priority
-          />
-        </div>
+        <Image
+          src={src}
+          alt={alt}
+          width={1200}
+          height={800}
+          className="w-auto h-auto max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
+          priority
+        />
       </DialogContent>
     </Dialog>
   );
@@ -70,14 +68,22 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
         {images.map((img, index) => (
           <div
             key={index}
-            className="relative w-full h-64 rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-105"
+            className="relative w-full h-64 rounded-lg overflow-hidden shadow-md cursor-pointer transition-transform hover:scale-105 bg-black"
             onClick={() => openImage(index)}
           >
+            <Image
+              src={img}
+              alt=""
+              fill
+              className="object-cover blur-md scale-110"
+              aria-hidden="true"
+            />
+            <div className="absolute inset-0 bg-blue-950/50" />
             <Image 
               src={img} 
               alt={`${altPrefix} ${index + 1}`} 
               fill 
-              className="object-cover"
+              className="object-contain"
               data-ai-hint="app screenshot"
             />
           </div>
@@ -85,17 +91,17 @@ export function ImageGallery({ images, altPrefix, className }: ImageGalleryProps
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 border-0 bg-transparent">
+        <DialogContent className="max-w-[90vw] max-h-[90vh] p-0 border-0 bg-transparent flex items-center justify-center">
           <VisuallyHidden>
             <DialogTitle>Image Gallery</DialogTitle>
           </VisuallyHidden>
-          <div className="relative w-full h-full flex items-center justify-center">
+          <div className="relative">
             <Image
               src={images[currentIndex]}
               alt={`${altPrefix} ${currentIndex + 1}`}
               width={1200}
               height={800}
-              className="max-w-full max-h-full object-contain rounded-lg"
+              className="w-auto h-auto max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
               priority
             />
             

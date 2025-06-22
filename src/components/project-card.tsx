@@ -10,12 +10,20 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <Card className="flex flex-col overflow-hidden h-full group transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg hover:border-primary/50">
       <CardHeader className="p-0">
-        <div className="relative w-full h-48 overflow-hidden">
+        <div className="relative w-full h-48 overflow-hidden bg-black">
+          <Image
+            src={project.main_image}
+            alt=""
+            fill
+            className="object-cover blur-md scale-110"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 bg-blue-950/50" />
           <Image
             src={project.main_image}
             alt={project.title}
             fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
+            className="object-contain transition-transform duration-300 group-hover:scale-105"
             data-ai-hint="flutter app"
           />
         </div>
