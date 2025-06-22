@@ -9,7 +9,7 @@ import { ProjectCard } from '@/components/project-card';
 import { EducationTimeline, ExperienceTimeline } from '@/components/timeline';
 import { AnimatedSection } from '@/components/animated-section';
 import { BackgroundDecorations } from '@/components/background-decorations';
-import { 
+import {  
   FaGithub, 
   FaLinkedin, 
   FaTwitter, 
