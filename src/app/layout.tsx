@@ -1,12 +1,15 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 import { getPortfolioData } from '@/lib/data';
+import { Language } from '@/types/portfolio';
+import { isLanguage } from './page';
 
-const inter = Inter({ 
-  subsets: ['latin'],
+const inter = Inter({
+  subsets: ['latin', 'latin-ext'], // Add latin-ext for better language support
   variable: '--font-inter',
+  display: 'swap', // Improves loading performance
 });
 
 export const metadata: Metadata = {
@@ -16,24 +19,24 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
+  searchParams
 }: Readonly<{
   children: React.ReactNode;
+  searchParams?: { [key: string]: string | string[] | undefined };
 }>) {
-  const data = await getPortfolioData();
-  const theme = data.theme || {};
-  const primary = theme.primaryColor || '300 100% 25%';
-  const background = theme.backgroundColor || '0 0% 20%';
-  const accent = theme.accentColor || '180 100% 50%';
+
+  const lang = isLanguage(searchParams?.lang) ? searchParams.lang : 'en' as Language;
+
+  // Support multiple RTL languages if needed in the future
+  const rtlLanguages: Language[] = ['ar'];
+  const dir = rtlLanguages.includes(lang) ? 'rtl' : 'ltr';
+
+  await getPortfolioData(lang);
 
   return (
-    <html lang="en" className={`${inter.variable} dark`} style={{
-      '--primary': primary,
-      '--background': background,
-      '--accent': accent,
-    } as React.CSSProperties}>
-      <head />
-      <body 
-        className="font-body antialiased"
+    <html lang={lang} dir={dir} className={`${inter.variable} dark`}>
+      <body
+        className={`font-body antialiased ${dir === 'rtl' ? 'rtl' : 'ltr'}`}
         suppressHydrationWarning={true}
       >
         {children}

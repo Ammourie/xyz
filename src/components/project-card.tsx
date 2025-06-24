@@ -38,7 +38,7 @@ export async function ProjectCard({ project, lang }: { project: Project; lang: L
         <p className="mt-2 text-muted-foreground text-sm">{project.description_short}</p>
         <div className="flex flex-wrap gap-2 mt-4">
           {project.tags.map((tag) => (
-            <Badge key={tag} variant="secondary">{tag}</Badge>
+            <Badge key={tag} variant="default">{tag}</Badge>
           ))}
         </div>
       </CardContent>
